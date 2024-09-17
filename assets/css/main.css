@@ -1,15 +1,3 @@
-/**
-* Template Name: Arsha
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -2146,5 +2134,40 @@ blockquote {
     height: auto;
     font-size: 1rem;
     padding: 7px 10px;
+  }
+}
+
+.counter-section {
+  background-color: #f8f9fa; /* Background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-item {
+  text-align: center;
+  margin: 15px;
+}
+
+.counter-number {
+  font-size: 3rem; /* Font size for the numbers */
+  color: #343a40; /* Dark color for text */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.counter-label {
+  font-size: 1.25rem; /* Font size for the labels */
+  color: #6c757d; /* Lighter color for the labels */
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .counter-number {
+    font-size: 2rem; /* Smaller font size on small screens */
+  }
+
+  .counter-label {
+    font-size: 1rem; /* Smaller font size on small screens */
   }
 }
