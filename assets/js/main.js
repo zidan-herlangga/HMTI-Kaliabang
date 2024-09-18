@@ -256,7 +256,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     new TypeIt("#typed", {
-      strings: ["Kreatif! Aktif! Inovatif!"],
+      strings: ["Inovatif! Kreatif! Interaktif!"],
       loop: true,
     }).go();
   });
