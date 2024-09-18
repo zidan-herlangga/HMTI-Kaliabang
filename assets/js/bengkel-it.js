@@ -1,4 +1,4 @@
-const mail_hmti = "zidanherlangga24@gmail.com";
+const mail_hmti = "hmti.kaliabang@gmail.com";
 
 function send() {
   const nameField = document.getElementById("name-field").value;
