@@ -1,0 +1,11 @@
+# robots.txt for https://hmtikaliabang.my.id
+
+User-agent: *
+Disallow: /private/    # Menolak akses ke direktori private
+Disallow: /temp/       # Menolak akses ke direktori temp
+Disallow: /login       # Menolak akses ke halaman login
+
+# Izinkan akses ke semua halaman lainnya
+Allow: /
+
+Sitemap: https://hmtikaliabang.my.id/sitemap.xml
