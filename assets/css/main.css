@@ -873,17 +873,30 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
-  background: linear-gradient(#37517e, #6600ff);
+  /* background: linear-gradient(#37517e, #6600ff); */
+  background-image:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("/assets/img/IMG_6031.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-img img {
   height: 130px;
+  display: none;
 }
 
 /* Media query untuk perangkat mobile */
 @media (max-width: 768px) {
   .hero-img img {
     max-height: 120px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-img img {
+    height: 50px;
   }
 }
 
@@ -978,6 +991,7 @@ section,
 }
 
 svg {
+  display: none;
   position: relative;
   /* top: 10px; */
   bottom: 10px;
