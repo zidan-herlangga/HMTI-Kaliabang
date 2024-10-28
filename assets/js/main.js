@@ -253,3 +253,24 @@
     }).go();
   });
 })();
+
+
+let timeLeft = 2 * 24 * 60 * 60; // 2 hari dalam detik
+const timerElement = document.getElementById("timer");
+const contentElement = document.getElementById("content");
+
+const countdown = setInterval(() => {
+  if (timeLeft <= 0) {
+    clearInterval(countdown);
+    contentElement.style.display = 'none'; // Menghilangkan konten
+  } 
+  else {
+    const days = Math.floor(timeLeft / (24 * 60 * 60));
+    const hours = Math.floor((timeLeft % (24 * 60 * 60)) / (60 * 60));
+    const minutes = Math.floor((timeLeft % (60 * 60)) / 60);
+    const seconds = timeLeft % 60;
+
+    timerElement.textContent = `Tersisa ${days}:${hours}:${minutes}:${seconds}`; // Menampilkan waktu tersisa
+    timeLeft--;
+  }
+}, 1000); // Interval 1 det

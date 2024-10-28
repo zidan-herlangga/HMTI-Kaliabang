@@ -54,7 +54,6 @@
     <!-- Main CSS File -->
     <link href="/assets/css/main.css" rel="stylesheet" />
   </head>
-
   <body class="index-page">
     <header id="header" class="header d-flex align-items-center fixed-top" style="background: rgb(40, 58, 90);">
       <div
@@ -84,73 +83,73 @@
     <main class="main">
       <!-- Join Section -->
       <section class="contact section" style="padding-top: 10rem;">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Join HMTI Yuk!</h2>
-        </div>
-
-        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="100" id="form-join">
           <div class="row gy-4">
             <div class="col-lg-12">
-              <!-- <form
-                action="https://docs.google.com/forms/d/e/1FAIpQLSd7fP-ryRCaiPomPZyEJYLoTVRwRQmoAPfj4FADDKYimQT4gA/formResponse"
-                method="POST"
-                target="_self"
-                class="php-email-form"
+              <form
+                action="https://script.google.com/macros/s/AKfycbwo0EBmSzCTbwz29OQBuoDpwpow3Icesu1BCUIW_h6owx7cHvx2Fd8ECzwEnmmoMI9OJA/exec"
+                method="post" 
+                target="_top"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
                 <div class="row gy-4">
+                  <h2>Form Join HMTI</h2>
                   <div class="col-md-6">
-                    <label for="name-field" class="pb-2">Nama Lengkap:</label>
+                    <label for="nama" class="pb-2">Nama Lengkap:</label>
                     <input
                       type="text"
-                      name="entry.2005620554" 
-                      id="name-field"
+                      name="nama" 
+                      id="nama"
                       class="form-control"
-                      required=""
+                      required
+                      placeholder="Masukan Nama Lengkap Anda"
                     />
                   </div>
 
                   <div class="col-md-6">
-                    <label for="nim-field" class="pb-2">NIM:</label>
+                    <label for="nim" class="pb-2">NIM:</label>
                     <input
                       type="text"
-                      name="entry.1045781291"
-                      id="nim-field"
+                      name="nim"
+                      id="nim"
                       class="form-control"
-                      required=""
+                      required
+                      placeholder="Masukan NIM Anda"
                     />
                   </div>
 
                   <div class="col-md-6">
-                    <label for="email-field" class="pb-2">Email:</label>
+                    <label for="email" class="pb-2">Email:</label>
                     <input
                       type="email"
-                      name="entry.1166974658"
-                      id="email-field"
+                      name="email"
+                      id="email"
                       class="form-control"
-                      required=""
+                      required
+                      placeholder="Masukan Email Anda"
                     />
                   </div>
 
                   <div class="col-md-6">
-                    <label for="telp-field" class="pb-2">No Whatsapp Aktif:</label>
+                    <label for="no_hp" class="pb-2">No Whatsapp Aktif:</label>
                     <input
-                      type="number"
-                      name="entry.839337160" 
-                      id="telp-field"
+                      type="tel" 
+                      name="no_hp" 
+                      id="no_hp"
                       class="form-control"
-                      required=""
+                      required
+                      placeholder="Masukan No Whatsapp"
                     />
                   </div>
 
                   <div class="col-md-6">
-                    <label for="divisi-field" class="pb-2">Divisi yang Diminati:</label>
+                    <label for="pilih_divisi" class="pb-2">Divisi yang Diminati:</label>
                     <select
-                      name="entry.1234567890"
-                      id="divisi-field"
+                      name="pilih_divisi"
+                      id="pilih_divisi"
                       class="form-control"
-                      required=""
+                      required
                     >
                       <option value="" disabled selected>Pilih Divisi</option>
                       <option value="PSDM">PSDM</option>
@@ -160,90 +159,27 @@
                   </div>
 
                   <div class="col-md-12">
-                    <label for="message-field" class="pb-2">Alasan Bergabung dengan HMTI:</label>
+                    <label for="alasan" class="pb-2">Alasan Bergabung dengan HMTI:</label>
                     <textarea
                       class="form-control"
-                      name="entry.9876543210" 
+                      name="alasan" 
                       rows="10"
-                      id="message-field"
-                      required=""
+                      id="alasan"
+                      required
                     ></textarea>
                   </div>
 
                   <div class="col-md-12 text-center">
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-
-                    <button type="submit">Send Message</button>
+                    <input type="submit" id="submit-button" class="btn btn-primary" value="Join Sekarang">
                   </div>
                 </div>
-              </form> -->
-                
-              <div class="container" id="ff-compose"></div>
-              <script async defer src="https://formfacade.com/include/106649255573840339055/form/1FAIpQLSd7fP-ryRCaiPomPZyEJYLoTVRwRQmoAPfj4FADDKYimQT4gA/bootstrap.js?div=ff-compose"></script>
+              </form>
             </div>
           </div>
         </div>
       </section>
       <!-- /Join Section -->
     </main>
-
-    <!-- <footer id="footer" class="footer">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="/" class="d-flex align-items-center">
-              <img src="/assets/logo-himpunan.png" alt="Logo HMTI" height="80" />
-              <span class="ms-4 sitename">HMTI</span>
-            </a>
-            <div class="footer-contact mt-5">
-              <p>Jl. Raya Kaliabang N0.8 Perwira Bekasi Utara 17142 Bekasi</p>
-              <p>West Java, Indonesia West Java</p>
-              <p class="mt-3">
-                <strong>Telp:</strong> <span>+62 21 88985633</span>
-              </p>
-              <p>
-                <strong>Email:</strong>
-                <span>hmti.kaliabang@gmail.com</span>
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-12 mt-5">
-            <h4>About:</h4>
-            <div class="footer-links d-flex flex-column">
-              <a href="https://www.bsi.ac.id/indexkoe_yht.php" target="_blank"
-                >BSI Universitas</a
-              >
-              <a
-                href="https://pusatinformasi.kampusmerdeka.kemdikbud.go.id/hc/id"
-                target="_blank"
-                >Kampus Merdeka</a
-              >
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-12 mt-5">
-            <h4>Follow Us:</h4>
-            <div class="social-links d-flex">
-              <a href=""><i class="bi bi-whatsapp"></i></a>
-              <a href="https://www.instagram.com/hmti.kaliabang/"
-                ><i class="bi bi-instagram"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>Copyright</span>
-          <strong class="px-1 sitename">HMTI DPC Kaliabang</strong>
-          <span>All Rights Reserved</span>
-        </p>
-      </div>
-    </footer> -->
 
     <!-- Scroll Top -->
     <a
@@ -252,6 +188,21 @@
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+
+    <!-- <div id="popup-banner" class="popup-banner" style="display: flex;">
+      <div class="popup-content">
+        <h2>Yuk Join HMTI Sekarang</h2>
+        <span class="timer-countdown  fs-5" id="timer"></span>
+        <br><br>
+        <button id="close-popup" style="padding: 10px 20px;
+        background-color: rgb(40, 58, 90);
+        color: white;
+        border: none;
+        border-radius: 5px;">Tutup Notifikasi</button>
+        <br><br>
+        <span class="mt-3 text-danger fw-bold">Peringatan! Hanya untuk HMTI <br></span>
+      </div>
+    </div> -->
 
     <!-- Preloader -->
     <!-- <div id="preloader"></div> -->
@@ -270,5 +221,21 @@
 
     <!-- Main JS File -->
     <script src="/assets/js/main.js"></script>
+    <!-- <script src="/assets/js/join-form.js"></script> -->
+    <script>
+      // Banner Popup
+      document.addEventListener("DOMContentLoaded", function () {
+        const popupBanner = document.getElementById("popup-banner");
+        const closePopup = document.getElementById("close-popup");
+
+        // Tampilkan banner saat halaman dibuka
+        popupBanner.style.display = "flex";
+
+        // Tutup banner saat tombol ditekan
+        closePopup.addEventListener("click", function () {
+          popupBanner.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>
